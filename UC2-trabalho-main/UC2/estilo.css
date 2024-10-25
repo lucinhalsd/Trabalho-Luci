@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:repeat(6,1fr) ;
+    grid-template-rows:repeat(6,1fr) ;
+    gap:10px ;
+}
+
+.header{
+    grid-column: span 6;
+    grid-row: span;
+    background-color: blue;
+
+}
+.nav{
+    grid-column: span 6;
+    grid-row: span;
+    background-color:green;
+
+    
+}
+.main{
+    grid-column: span 6;
+    grid-row: span 2;
+    background-color:yellow;
+ 
+}
+.card{
+    width: 70px;
+    height:60px ;
+    background-color: beige;
+
+}
+.section{
+ 
+    grid-column: span 6;
+    grid-row: span;
+    background-color:red;
+    display: flex;
+    justify-content: space-around;
+     align-items: center; 
+
+}
+.section1{
+    
+    grid-column: span 6 ;
+    grid-row: span ;
+    background-color:aqua;   
+}
+.footer{
+    grid-column: span 6;
+    grid-row: span 3;
+    background-color:black;
+}
